@@ -23,5 +23,6 @@ vim variables.tf
 Url of the service is provided in the output above. Check response of the deployed service:
 ~~~
 curl  https://kefir-service-3ziwmhtzkq-lz.a.run.app
+curl -I  https://kefir-service-3ziwmhtzkq-lz.a.run.app
 ~~~
 ![image](https://user-images.githubusercontent.com/53195216/110045356-9a59bb80-7d5b-11eb-991f-e52af49647b0.png)

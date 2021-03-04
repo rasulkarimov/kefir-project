@@ -1,12 +1,12 @@
 # kefir-project
 
-## build docker image and push it to GCR
+## Build docker image and push it to GCR
 ~~~
 cd app
 gcloud builds submit --tag gcr.io/kefir-306607/kefir:v1.6
 ~~~
 ![image](https://user-images.githubusercontent.com/53195216/110044569-6d58d900-7d5a-11eb-992b-94f8f26042b9.png)
-## chech variables in terrraform directory (be ensure that docker image version is correct)
+## Chech variables in terrraform directory (be ensure that docker image version is appropriate)
 ~~~
 cd  terraform
 vim variables.tf
@@ -19,3 +19,9 @@ vim variables.tf
 ## Run "terraform apply" to reach the desired state of the configuration
 ![image](https://user-images.githubusercontent.com/53195216/110044793-cc1e5280-7d5a-11eb-89d0-3c79fa2fc589.png)
 ![image](https://user-images.githubusercontent.com/53195216/110045032-1ef80a00-7d5b-11eb-93f7-bf8a10590a75.png)
+
+Url of the service is provided in the output above. Check response of the deployed service:
+~~~
+curl  https://kefir-service-3ziwmhtzkq-lz.a.run.app
+~~~
+![image](https://user-images.githubusercontent.com/53195216/110045356-9a59bb80-7d5b-11eb-991f-e52af49647b0.png)

@@ -5,6 +5,7 @@
 cd app
 gcloud builds submit --tag gcr.io/kefir-306607/kefir:v1.6
 ~~~
+![image](https://user-images.githubusercontent.com/53195216/110044569-6d58d900-7d5a-11eb-992b-94f8f26042b9.png)
 ## chech variables in terrraform directory (be ensure that docker image version is correct)
 ~~~
 cd  terraform

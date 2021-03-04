@@ -16,7 +16,7 @@ resource "google_cloud_run_service" "default" {
     spec {
       container_concurrency = 80
       containers {
-        image = "gcr.io/kefir-306607/kefir:latest"
+        image = var.docker_image
         ports {
           container_port = 80
         }

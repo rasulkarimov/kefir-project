@@ -9,7 +9,7 @@ resource "google_cloud_run_service" "default" {
   template {
     metadata {
       annotations = {
-        "autoscaling.knative.dev/minScale" = "1"
+        "autoscaling.knative.dev/minScale" = "2"
         "autoscaling.knative.dev/maxScale" = "5"
       }
     }

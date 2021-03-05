@@ -8,7 +8,7 @@ gcloud builds submit --tag gcr.io/kefir-306607/kefir:v1.6
 ![image](https://user-images.githubusercontent.com/53195216/110044569-6d58d900-7d5a-11eb-992b-94f8f26042b9.png)
 ~~~
 ~~~
-For deploying our application we will use "Cloud run" serviceless platform, since it suitable for highly scalable containerized applications and only charges for only the exact used resources.
+For deploying our application we will use "Cloud run" serviceless platform, since it suitable for highly scalable containerized applications and only charges for the exact used resources.
 ## Review variables.tf file in terrraform directory (be ensure that docker image version is appropriate)
 ~~~
 cd  terraform
